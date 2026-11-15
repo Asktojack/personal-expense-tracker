@@ -1,0 +1,64 @@
+
+/* Transaction history container */
+.transaction-list-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Search and filter section */
+.transaction-filters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.transaction-filters input,
+.transaction-filters select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Transaction table */
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+    margin-top: 20px;
+}
+
+.transaction-table th,
+.transaction-table td {
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+.transaction-table th {
+    background: #1e293b;
+    color: white;
+}
+
+.transaction-table button {
+    margin: 3px;
+    padding: 7px 12px;
+    cursor: pointer;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .transaction-filters {
+        grid-template-columns: 1fr;
+    }
+
+    .transaction-list-container {
+        overflow-x: auto;
+    }
+
+    .transaction-table {
+        min-width: 650px;
+    }
+}
